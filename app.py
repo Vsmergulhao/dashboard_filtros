@@ -11,7 +11,8 @@ st.set_page_config(
     layout="wide",
 )
 
-df = pd.read_csv('.\dados-imersao-final.csv')
+# df = pd.read_csv('.\dados-imersao-final.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/Vsmergulhao/dashboard_filtros/refs/heads/main/dados-imersao-final.csv')
 
 
 # --- Barra Lateral (Filtros) ---
@@ -137,4 +138,5 @@ with col_graf4:
 
 # --- Tabela de Dados Detalhados ---
 st.subheader("Dados Detalhados")
+
 st.dataframe(df_filtrado)
